@@ -126,8 +126,14 @@ window.onload=function() {
    
     // attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
     for (var i = 0; i < tabLinks.length; i++) {
-
-    }
+        tabLinks[i].onclick=function(){
+            displayPanel(this);//when this function executes, "this" calls whatever called it
+            return false;
+            }
+        tabLinks[i].onfocus=function(){//onfucs is for assistive tech and keyboard selection of tabs
+            displayPanel(this);
+            return false;
+    }//This for loop is telling the computer to identify all the tabLinks and then stop counting. It is also telling the computer to perform certain procedures for every tab as long as the number of that tab is less than one (i).
 }
 
 function displayPanel() {
