@@ -1,7 +1,7 @@
 // Issue 1: Syntax errors
 
 function myFunction( {
-	console.log("You called myFunction);
+	console.log("You called myFunction");
 }
 
 window.onload = function() {
