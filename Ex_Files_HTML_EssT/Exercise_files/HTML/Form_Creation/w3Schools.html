@@ -4,63 +4,66 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <title>Identification Test</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    
+    
 </head>
 
 <body>
 <form>
     <section>
     <h1>Companionship</h1>
-        <ol type ="1">
-            <li>Who is your companion?</li>
+        <ol id="questions1">
+            <li class="matched">Who is your companion?</li>
                 <li><ul>
-                    <li>First Name
+                    <li>First Name 
                         <input type = "text" name ="First Name"></li>
                     <li>Last Name
                     <input type = "text" name ="Last Name"></li>
                 </ul></li>
-            <li>Have you met your companion? </li>
+            <li class="matched">Have you met your companion? </li>
                 <li><ul id = "radio">
                     <li>Yes
                         <input type = "radio" name = "Yes"></li>
                     <li>No
                         <input type = "radio" name = "No"></li>
                 </ul> </li>       
-            <li>Are you willing to go home teaching with your companion?</li>
+            <li class="matched">Are you willing to go home teaching with your companion?</li>
                 <li><ul id = "radio">
                     <li>Yes
                         <input type = "radio" name = "Yes"></li>
                     <li>No
                         <input type = "radio" name = "No"></li>
                 </ul></li> 
-            <li>Are you able to go home teaching?</li>
+            <li class="matched">Are you able to go home teaching?</li>
                 <ul id = "radio">
                     <li>Yes
                         <input type = "radio" name = "Yes"></li>
                     <li>No
                         <input type = "radio" name = "No"></li>
                 </ul> </li>
-            <li>Are you willing to go home teaching?</li>
+            <li class="matched">Are you willing to go home teaching?</li>
                 <ul id = "radio">
                     <li>Yes
                         <input type = "radio" name = "Yes"></li>
                     <li>No
                         <input type = "radio" name = "No"></li>
                 </ul> </li>
-            <li>Is your companion willing to come home teaching with you?</li>
+            <li class="matched">Is your companion willing to come home teaching with you?</li>
                 <li><ul id = "radio">
                     <li>Yes
                         <input type = "radio" name = "Yes"></li>
                     <li>No
                         <input type = "radio" name = "No"></li>
                 </ul> </li>
-            <li>Are you able to schedule times with your companion to go home teaching?</li>
+            <li class="matched">Are you able to schedule times with your companion to go home teaching?</li>
                 <li><ul id = "radio">
                     <li>Yes
                         <input type = "radio" name = "Yes"></li>
                     <li>No
                         <input type = "radio" name = "No"></li>
                 </ul> </li>
-            <li>Additional Comments:</li>
+            <li class="matched">Additional Comments:</li>
                 <li><ul>
                     <input id="additionalComments" type="text" name="Additional Comments" maxlength="20">
                 </ul></li>
@@ -80,6 +83,6 @@
     
     
     
-    
+<script src="scripts.js"></script>
     
 </html>
