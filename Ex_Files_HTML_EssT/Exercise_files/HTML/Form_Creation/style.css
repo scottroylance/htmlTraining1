@@ -1,4 +1,7 @@
-ul#radio li {display: inline;}
+ul#Radio li {display: inline;}
 #additionalComments {
     width: 590px;
     }
+li {
+    list-style-type: none;
+}
