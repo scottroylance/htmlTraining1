@@ -12,40 +12,38 @@
 
 <script>
 function GetNumbPriceAsInt(){
-    
-    
-
+    var price1 = document.getElementById("numb").value;
+    var price3 = parseInt(price1);
+    return price3;
 }
 function myFunction(){
-    
-    var price1 = document.getElementById("numb").value;
+    var text;
+    var price3 = GetNumbPriceAsInt();
     var price2 = 100000;
-    var price3 = parseInt(price1);
     
-    return price3 {
-        if (isNaN(price3) || price3 < price2) {
-            text = "it costs too much.";
-        }
-        else {
-            text = "you can do it!";
-        }   
+    if (isNaN(price3) || price3 > price2) {
+        text = "it costs too much.";
     }
+    else {
+        text = "you can do it!";
+    }   
+
     document.getElementById("demo").innerHTML =
-    "Then" + text;
+    "Then " + text;
 } 
-    
+    /*
     var price3 = parseInt(price1);
-    return price3 {
-        if (isNaN(price3) || price3 < price2) {
-            text = "it costs too much.";
-        }
-        else {
-            text = "you can do it!";
-        }   
+    if (isNaN(price3) || price3 < price2) {
+        text = "it costs too much.";
     }
+    else {
+        text = "you can do it!";
+    }   
+    
     document.getElementById("demo").innerHTML =
     "Then" + text;
-}
+}   */
+
 </script>
 
 </body>
