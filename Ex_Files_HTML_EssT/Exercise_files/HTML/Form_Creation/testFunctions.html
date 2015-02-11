@@ -12,20 +12,24 @@ onclick = "myFunction()">Try it</button>
 <p id="demo"></p>
 
 <script>
-function = myFunction(){
-var price1, var price2, text;
+function myFunction(){
+    var price1;
+    var price2;
+    var text;
 
-var price1 = document.getElementById("numb").value;
-var price2 = 100000;
+    var price1 = document.getElementById("numb").value;
+    var price2 = 100000;
 
-if (isNaN(price1) || x < price2) {
-    text = "It costs too much.";}
+    if (isNaN(price1) || x < price2) {
+        text = "It costs too much.";
+    }
     else {
-    text = "You can do it!";}   
+        text = "You can do it!";
+    }   
+    
+    document.getElementById("demo").innerHTML =
+    "Then it costs" + text;
 }
-
-document.getElementById("demo").innerHTML =
-"Then it costs" + total;
 </script>
 
 </body>
