@@ -5,30 +5,46 @@
 <h1>JavaScript Variables</h1>
 
 <p display: inline> If the car costs 
-<u><input id = "numb" type = "number"></u>
-<button type="button"
-onclick = "myFunction()">Try it</button>
+    <u><input id = "numb" type = "number"></u>
+    <button type="button" onclick = "myFunction()">Try it</button>
 
-<p id="demo"></p>
+<p id="demo"> </p>
 
 <script>
-function myFunction(){
-    var price1;
-    var price2;
-    var text;
+function GetNumbPriceAsInt(){
+    
+    
 
+}
+function myFunction(){
+    
     var price1 = document.getElementById("numb").value;
     var price2 = 100000;
-
-    if (isNaN(price1) || x < price2) {
-        text = "It costs too much.";
-    }
-    else {
-        text = "You can do it!";
-    }   
+    var price3 = parseInt(price1);
     
+    return price3 {
+        if (isNaN(price3) || price3 < price2) {
+            text = "it costs too much.";
+        }
+        else {
+            text = "you can do it!";
+        }   
+    }
     document.getElementById("demo").innerHTML =
-    "Then it costs" + text;
+    "Then" + text;
+} 
+    
+    var price3 = parseInt(price1);
+    return price3 {
+        if (isNaN(price3) || price3 < price2) {
+            text = "it costs too much.";
+        }
+        else {
+            text = "you can do it!";
+        }   
+    }
+    document.getElementById("demo").innerHTML =
+    "Then" + text;
 }
 </script>
 
