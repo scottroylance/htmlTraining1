@@ -7,22 +7,22 @@
 <p id="equation"></p>
 
 <p id="string"></p>
-    
+
     
 <script>
-function multiplyParameters(a, b) {
-    var d = (a*b);
-    return d;
+function multiplyParameters(example) {
+    //var b = parseInt(a);
+    return example+5;
 }
 
-function concatenateStrings(){
+function concatenateStrings(initialValue){
     var a = "The result of the previous function is "
-    var funcCall= multiplyParameters()
-    return funcCall
+    var funcCall = multiplyParameters(initialValue);
+    return a + funcCall;
 }
-document.getElementById("equation").innerHTML = multiplyParameters(10, 5) ;
+//document.getElementById("equation").innerHTML = multiplyParameters(10);
 
-document.getElementById("string").innerHTML = concatenateStrings();    
+document.getElementById("string").innerHTML = concatenateStrings(10);    
     
 </script>
 
