@@ -4,14 +4,13 @@
 
 <p>This example calls a function which performs a calculation, and returns the result:</p>
 
-<p id="equation"></p>
-
 <p id="string"></p>
 
-    
 <script>
+
+document.getElementById("string").innerHTML = concatenateStrings(10);    
+    
 function multiplyParameters(example) {
-    //var b = parseInt(a);
     return example+5;
 }
 
@@ -20,10 +19,7 @@ function concatenateStrings(initialValue){
     var funcCall = multiplyParameters(initialValue);
     return a + funcCall;
 }
-//document.getElementById("equation").innerHTML = multiplyParameters(10);
 
-document.getElementById("string").innerHTML = concatenateStrings(10);    
-    
 </script>
 
 </body>
