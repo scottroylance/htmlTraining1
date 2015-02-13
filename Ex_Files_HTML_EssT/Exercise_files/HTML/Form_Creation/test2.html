@@ -4,16 +4,26 @@
 
 <p>This example calls a function which performs a calculation, and returns the result:</p>
 
-<p id="demo"></p>
+<p id="equation"></p>
 
+<p id="string"></p>
+    
+    
 <script>
-function myFunction(a, b) {
+function multiplyParameters(a, b) {
     var d = (a*b);
     return d;
-
-
 }
-document.getElementById("demo").innerHTML = myFunction(10, 5) ;
+
+function concatenateStrings(){
+    var a = "The result of the previous function is "
+    var funcCall= multiplyParameters()
+    return funcCall
+}
+document.getElementById("equation").innerHTML = multiplyParameters(10, 5) ;
+
+document.getElementById("string").innerHTML = concatenateStrings();    
+    
 </script>
 
 </body>
