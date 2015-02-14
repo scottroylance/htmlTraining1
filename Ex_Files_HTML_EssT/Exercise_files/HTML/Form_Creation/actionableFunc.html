@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Actionable Functions</title>
+</head>
+
+<body>
+<section>   
+    <h1>Actionable Functions</h1>
+
+Get input text from html input element in preparation to pass that to another function.
+
+    <p>Please enter your text.</p>    
+    <input type="text"  id= "userText" name="typeText" >
+    
+    <p id="test"></p>    
+</section>
+
+<section>
+    <h1>Set User Text to Variable</h1>
+    <button type="button" id ="forceIt" onclick = "testString('kkkl')">BRING ME THAT STRING!</button>
+    <p id="test2"></p>
+</section>
+    
+    
+    
+    
+
+    
+    
+    
+    
+</body>
+
+<script>
+function getString(b){
+    var userInput = document.getElementById("userText").value;
+    var returnThis = userInput + b;
+        document.getElementById("test").innerHTML = returnThis;
+    return returnThis;
+}
+function testString(a){
+    var callString = getString(a);
+    document.getElementById("test2").innerHTML = "test " + callString;
+    return callString;
+}
+</script>
+
+</html>
